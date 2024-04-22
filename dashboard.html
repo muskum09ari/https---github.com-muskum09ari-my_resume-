@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.15/tailwind.min.css" integrity="sha512-FAHJrnv6K65X+37PZkVYMcYj1dJllIK+zaAD13y7s/nBqE61J7VcogZUhJtCpf24qfMk2O2x/rjTTxjyJWfzEg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <!----tailwind and css used here-------->
+</head>
+<body>
+<!---code for skllls in circular form--------------------->
+<header>	
+  <nav class="px-2 bg-white border-gray-200 dark:bg-gray-900 dark:border-gray-700">
+    <div class="container flex flex-wrap items-center justify-between mx-auto">
+      
+      <a href="index.html" class="flex items-center">
+          <img src="fotor_2023-3-15_19_29_9.png" class="h-8 mr-2 sm:h-10" alt=" Logo" />
+          <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">Muskan Kumari</span>
+      </a>
+      
+      <div class="hidden w-full md:block md:w-auto" id="navbar-multi-level">
+        <ul class="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+          <li>
+            <a href="project.html" class="bg-cyan-600 hover:bg-cyan-500 text-fuchsia-50 rounded-md px-3 py-2 text-sm font-medium" aria-current="page">Hire Me</a>
+          </li>
+          <li>
+            <a href="dashboard.html" class="bg-blue-900 hover:bg-blue-600 text-white rounded-md px-3 py-2 text-sm font-medium" aria-current="page">Dashboard</a>
+
+            
+          </li>
+          <li>
+            <a href="index.html" class="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-white dark:bg-blue-600 md:dark:bg-transparent" aria-current="page">Home</a>
+          </li>
+          <li>
+            <a href="service.html" class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Services</a>
+          </li>
+          <li>
+            <a href="project.html" class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Projects</a>
+          </li>
+          <li>
+            <a href="newsletter.html" class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+
+    
+<!---script---skill---------------------------------->
+
+<script defer src="https://unpkg.com/alpinejs@3.2.4/dist/cdn.min.js">
+
+</script>    
+<div class="relative isolate overflow-hidden  py-24 sm:py-32">
+     
+
+    <section x-data="skillDisplay"
+    
+        class="p-6 space-y-6 bg-blue-100 rounded-xl md:grid md:grid-cols-2 md:gap-4 sm:space-y-0">
+         
+        <div class="grid grid-cols-2 gap-6">
+            <template x-for="skill in skills">
+              
+                <button x-text="skill.title"
+                    class=" text-center text-lg text-gray-100 transition bg-violet-600 rounded-md h-14 w-44 hover:bg-yellow-600"
+                    :class="(currentSkill.title == skill.title) && 'font-bold ring-2 ring-offset-black'"
+                    @click="currentSkill = skill"></button>
+            </template>
+        </div>
+
+        <div class="flex items-center justify-center" x-data="{ circumference: 2 * 22 / 7 * 120 }">
+            <svg class="transform -rotate-90 w-72 h-72">
+                <circle cx="145" cy="145" r="120" stroke="currentColor" stroke-width="30" fill="transparent"
+                    class="text-yellow-900" />
+
+                <circle cx="145" cy="145" r="120" stroke="currentColor" stroke-width="30" fill="transparent"
+                    :stroke-dasharray="circumference"
+                    :stroke-dashoffset="circumference - currentSkill.percent / 100 * circumference"
+                    class="text-blue-500" />
+            </svg>
+        
+            <span class="absolute text-5xl" x-text="`${currentSkill.percent}%`">
+
+            </span>
+            </div>
+    </section>
+
+
+    </div>
+
+    </header>
+
+
+
+<!------js code script----------------------for progress bar-->
+<script>
+  document.addEventListener('alpine:init', () => {
+      Alpine.data('skillDisplay', () => ({
+          skills: [{
+                  'title': 'Machine Learning',
+                  'percent': '85',
+              },
+              {
+                  'title': 'Web Development',
+                  'percent': '70',
+              },
+              {
+                  'title': 'Python',
+                  'percent': '90',
+              },
+              {
+                  'title': 'Salesforce',
+                  'percent': '70',
+              },
+              
+          ],
+          currentSkill: {
+              'title': 'Machine Learning',
+              'percent': '85',
+          }
+      }));
+  });
+</script>
+
+
+<section>
+  <img src="hea.png" alt="bakground image " class="absolute inset-0 -z-10 h-full w-full object-cover object-right md:object-center  brightness-50 blur-sm ">
+
+
+  <div class="mx-auto mt-10 grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5">
+    
+    <a href="https://www.linkedin.com/in/muskan-kumari-7b2a69217/" target="_blank">
+    <img class="col-span-2 max-h-12 w-full object-contain lg:col-span-1" src="linkedin.jpg" alt="linkedin icon" width="158" height="48" title="LinedIn Connect">
+</a>
+    <a href="https://github.com/muskum09ari">
+    <img class="col-span-2 max-h-12 w-full object-contain lg:col-span-1" src="github.png" alt="git hub page" width="158" height="48" title="Github Connect">
+</a>
+    <a href="mailto:musk09an07kumari@gmail.com
+    .com?subject=Subject&body=Body">
+    <img class="col-span-2 max-h-12 w-full object-contain lg:col-span-1" src="gmail.png" alt="gmail logo icon" width="158" height="48" title="Gmail Connect">
+</a>
+<a href="https://join.skype.com/invite/vXgLGdtp4tbL ">
+  <img class="col-span-2 col-start-2 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1 " src="sky.png" alt="skype logo" width="158" height="48" title="Skype Connect">
+    <a href="https://medium.com/@grin9holy-grail">
+    <img class="col-span-2 max-h-12 w-full object-contain sm:col-start-2 lg:col-span-1" src="med.png" alt="medium icon" width="158" height="48" title="Medium Connect">
+</a>
+    
+    
+</a>
+</div>
+</section>
+
+<!----footer----------------------------------->
+<footer  >
+<p>&copy; 2023 M&#xB5;&#353;k&#x105;n k&#xB5;&#x1D52A;&#x105;ri&reg; </p>
+<p>All rights reserved &clubs;</p>
+</footer>
+
+   
+    </body>
+    </html>

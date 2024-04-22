@@ -1,0 +1,291 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>project</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!----tailwind and css used here-------->
+</head>
+<body>
+  <!---navbar-------->
+
+
+
+  <!--
+  This example requires updating your template:
+
+  ```
+  <html class="h-full bg-gray-100">
+  <body class="h-full">
+  ```
+-->
+<header>	
+  <nav class="px-2 bg-white border-gray-200 dark:bg-gray-900 dark:border-gray-700">
+    <div class="container flex flex-wrap items-center justify-between mx-auto">
+      <a href="index.html" class="flex items-center">
+          <img src="fotor_2023-3-15_19_29_9.png" class="h-8 mr-2 sm:h-10" alt=" Logo" />
+          <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">Muskan Kumari</span>
+      </a>
+      
+      
+      
+      <div class="hidden w-full md:block md:w-auto" id="navbar-multi-level">
+
+        
+        <ul class="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+
+          
+          
+          <li>
+            <a href="dashboard.html" class="bg-blue-900 hover:bg-blue-600 text-white rounded-md px-3 py-2 text-sm font-medium" aria-current="page">Dashboard</a>
+          </li>
+<!-----popover dasboard-->
+<!-----------hire me-----------------button--------------->
+<li> 
+  <div class="flex justify-center">
+    <button class="bg-cyan-600 hover:bg-cyan-800 text-white font-semibold py-2 px-4 rounded-full transition" onclick="showForm()">Hire Me</button>
+  </div>
+  
+  <!-- Hire Me Form Modal  <li>
+        <a href="project.html" class="bg-cyan-600 hover:bg-cyan-500 text-fuchsia-50 rounded-md px-3 py-2 text-sm font-medium" aria-current="page">Hire Me</a>
+        
+      </li>-->
+  <div class="fixed z-10 inset-0 overflow-y-auto hidden" id="hire-me-modal">
+    
+    <div class="flex items-center justify-center min-h-screen">
+      <div class="relative bg-white rounded-md w-full max-w-md mx-auto">
+        <form class="p-6 bg-black">
+          <img src="myimg.jpg" alt="form" class="block mx-auto" width="150" height="100" >
+          <h2 class="text-2xl font-extrabold mb-4 text-center bg-slate-300">Hire Me</h2>
+          <div class="mb-4">
+            <label class="block text-white font-medium mb-2" for="name">Name</label>
+            <input class="w-full border border-gray-400 py-2 px-3 rounded-lg" type="text" id="name" name="name" required>
+          </div>
+          <div class="mb-4">
+            <label class="block text-white font-medium mb-2" for="email">Email</label>
+            <input class="w-full border border-gray-400 py-2 px-3 rounded-lg" type="email" id="email" name="email" required>
+          </div>
+          <div class="mb-4">
+            <label class="block text-white font-medium mb-2" for="message">Message</label>
+            <textarea class="w-full border border-gray-400 py-2 px-3 rounded-lg" id="message" name="message" rows="5" required></textarea>
+          </div>
+          <div class="flex justify-end">
+            <button class="bg-yellow-600 hover:bg-green-600 text-white font-semibold py-2 px-4 rounded-full transition mr-2" type="submit">Send</button>
+            <button class="bg-red-400 hover:bg-red-500 text-gray-800 font-semibold py-2 px-4 rounded-full transition" type="button" onclick="hideForm()">Cancel</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function showForm() {
+      var modal = document.getElementById("hire-me-modal");
+      modal.classList.remove("hidden");
+    }
+  
+    function hideForm() {
+      var modal = document.getElementById("hire-me-modal");
+      modal.classList.add("hidden");
+    }
+  </script>
+  </li>
+  <!-----end form section for hire me-->
+
+
+          
+          <li>
+            <a href="index.html" class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent" aria-current="page">Home</a>
+          </li>
+          <li>
+            <a href="service.html" class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Services</a>
+          </li>
+          <li>
+            <a href="project.html" class="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-white dark:bg-blue-600 md:dark:bg-transparent" aria-current="page">Projects</a>
+          </li>
+          <li>
+            <a href="newsletter.html" class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+    </header>
+
+
+<!-----------------------dashboard type commenting-->
+<!------------
+<div class="min-h-full">
+    <nav class="bg-gray-800">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="flex h-16 items-center justify-between">
+          <div class="flex items-center">
+            <div class="flex-shrink-0">
+              <img src="fotor_2023-3-15_19_29_9.png" class="h-8 mr-2 sm:h-10" alt=" Logo" />
+            </div>
+            <div class="hidden md:block">
+              <div class="ml-10 flex items-baseline space-x-4">
+                <!- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+
+               <!-------------
+                <a href="project.html" class="bg-gray-900 text-white rounded-md px-3 py-2 text-sm font-medium" aria-current="page">Dashboard</a>
+  
+                <a href="index.html" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Home</a>
+  
+                <a href="service.html" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Services</a>
+  
+                <a href="project.html" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Project</a>
+  
+                <a href="newsletter.html" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Contact</a>
+              </div>
+            </div>
+          </div>
+          </div>
+          
+        </div>
+
+      </nav>
+      </div>
+
+
+    -------dasboard commenting off------------->
+<!------project------>
+
+<!--lets start--projets section-->
+<div class="p-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-5 bg-white">
+  <!--Card 1-->
+  <div class="rounded overflow-hidden shadow-lg bg-cyan-100">
+    <img class="w-full" src="img9.png" alt="aiml image">
+    <div class="px-6 py-4">
+      <div class="font-bold text-xl mb-2 text-center">Krishak Guide</div>
+      <div class="p-12 "> 
+      <p class="text-black text-base">
+        The proposed project soil data will be collected from the farm with the help of a low cost digital device (includes different sensors, weather conditions access, location access etc.) and this data will be fetched with the help of Internet of things technology a machine learning based platform which will provide a more accurate and faster decision making for crop selection. farmers will also be advised about the use of fertilizers and pesticides in the suggested crop. And detection of disease in crops and recommended solution for the issues.
+      </p>
+      </div>
+      <div class=" flex justify-center items-center">
+      <a href="https://github.com/muskum09ari" target="_blank" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-300 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+        Read more
+        <svg aria-hidden="true" class="w-4 h-4 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+    </a>
+  </div>
+
+    </div>
+
+  </div>
+  <!--Card 2-->
+  <div class="rounded overflow-hidden shadow-lg bg-cyan-100">
+    <img class="w-full" src="img7.png" alt="River">
+    <div class="px-6 py-4">
+      <div class="font-bold text-xl mb-2 text-center">DOUBLE ACTING COMPRESSOR BASED OXYGEN CONCENTRATOR</div>
+      <div class="p-12 "> 
+      <p class="text-black text-base">
+        The motive of invention is to produce oxygen from oxygen concentrator at a pressure of 40-50 Liter per minute to decrease our dependency on Oxygen cylinders for the sever cases. Basically, the concentrators give out oxygen at a rate of 5-15 litres per minute whereas an oxygen cylinder gives out oxygen at 40-50 litres per minute. Thus, our motive is to increase the pressure of oxygen flowing from a concentrator up to 40-50 litres per minute. Such that, severe corona patient can also be cured by using the concentrator only.
+      </p>
+      </div>
+      <div class=" flex justify-center items-center">
+      <a href="https://ipindia.gov.in/manual-patents.htm" target="_blank" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-200 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+        Read more
+        <svg aria-hidden="true" class="w-4 h-4 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+    </a>
+  </div>
+    </div>
+  
+  </div>
+
+  <!--Card 3-->
+  <div class="rounded overflow-hidden shadow-lg bg-cyan-100 ">
+    <img class="w-full" src="img8.png" alt="Forest">
+    <div class="px-6 py-4 ">
+      <div class="font-bold text-xl mb-2 text-center">Exploring Power Drives for Industrial Applications</div>
+      <div class="p-12 "> 
+      <p class="text-black text-base ">
+        This article is more relevant to the different electric drives and the benefits of each 
+                drive.Brushless DC motors, permanent magnet DC motors, AC synchronous motors, 
+                universal motors, and induction motors are all examples of electric power drives. Induction motor 
+                drives are one of the most often used drives in the industry. These drives have significant benefits 
+                in terms of long runtime and ease of maintenance. However, BLDC drives use less electricity and 
+                are suited for a wide range of applications. An experimental analysis of the motor's speed, torque, 
+                and efficiency was conducted in order to evaluate it. Here a comparison is done of different types 
+                of electric motor and the characteristics of electric motor drives used in industrial applications by 
+                testing each type of motor with a dynamometer setup.
+      </p>
+    </div>
+
+    </div>
+    <div class=" flex justify-center items-center">
+    <a href="https://easychair.org/conferences/overview?a=29494534" target="_blank" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-900 dark:focus:ring-blue-800 ">
+      Read more 
+
+      <svg aria-hidden="true" class="w-4 h-4 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+
+    </a>
+  
+  </div>
+  </div>
+</div>
+
+<!-----
+      <section>
+        <div class="mx-auto mt-10 grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5">
+          <a href="https://www.linkedin.com/in/muskan-kumari-7b2a69217/" target="_blank">
+          <img class="col-span-2 max-h-12 w-full object-contain lg:col-span-1" src="linkedin.jpg" alt="linkedin icon" width="158" height="48" title="LinedIn Connect">
+      </a>
+          <a href="https://github.com/muskum09ari">
+          <img class="col-span-2 max-h-12 w-full object-contain lg:col-span-1" src="github.png" alt="git hub page" width="158" height="48" title="Github Connect">
+      </a>
+          <a href="mailto:musk09an07kumari@gmail.com
+          .com?subject=Subject&body=Body">
+          <img class="col-span-2 max-h-12 w-full object-contain lg:col-span-1" src="gmail.png" alt="gmail logo icon" width="158" height="48" title="Gmail Connect">
+      </a>
+      <a href="https://join.skype.com/invite/vXgLGdtp4tbL ">
+        <img class="col-span-2 col-start-2 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1 " src="sky.png" alt="skype logo" width="158" height="48" title="Skype Connect">
+          <a href="https://medium.com/@grin9holy-grail">
+          <img class="col-span-2 max-h-12 w-full object-contain sm:col-start-2 lg:col-span-1" src="med.png" alt="medium icon" width="158" height="48" title="Medium Connect">
+      </a>
+          
+          
+      </a>
+    </section>
+  
+     -->       
+  
+     <section>
+      <img src="ro.png" alt="bakground image " class="absolute inset-0 -z-10 h-full w-full object-cover object-right md:object-center  brightness-50 blur-md">
+
+      <div class="mx-auto mt-10 grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5">
+        
+        <a href="https://www.linkedin.com/in/muskan-kumari-7b2a69217/" target="_blank">
+        <img class="col-span-2 max-h-12 w-full object-contain lg:col-span-1" src="linkedin.jpg" alt="linkedin icon" width="158" height="48" title="LinedIn Connect">
+    </a>
+        <a href="https://github.com/muskum09ari">
+        <img class="col-span-2 max-h-12 w-full object-contain lg:col-span-1" src="github.png" alt="git hub page" width="158" height="48" title="Github Connect">
+    </a>
+        <a href="mailto:musk09an07kumari@gmail.com
+        .com?subject=Subject&body=Body">
+        <img class="col-span-2 max-h-12 w-full object-contain lg:col-span-1" src="gmail.png" alt="gmail logo icon" width="158" height="48" title="Gmail Connect">
+    </a>
+    <a href="https://join.skype.com/invite/vXgLGdtp4tbL ">
+      <img class="col-span-2 col-start-2 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1 " src="sky.png" alt="skype logo" width="158" height="48" title="Skype Connect">
+        <a href="https://medium.com/@grin9holy-grail">
+        <img class="col-span-2 max-h-12 w-full object-contain sm:col-start-2 lg:col-span-1" src="med.png" alt="medium icon" width="158" height="48" title="Medium Connect">
+    </a>
+        
+        
+    </a>
+    </div>
+  </section>
+  
+
+
+
+  <footer>
+		<p>&copy; 2023 M&#xB5;&#353;k&#x105;n k&#xB5;&#x1D52A;&#x105;ri&reg; </p>
+        <p>All rights reserved &clubs;</p>
+	</footer>
+
+
+</body>
+</html>

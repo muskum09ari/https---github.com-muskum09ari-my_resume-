@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	
+  <title>Newsletter and connect us</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!----tailwind and css used here-------->
+</head>
+<body>
+
+    <header>	
+<nav class="px-2 bg-white border-gray-200 dark:bg-gray-900 dark:border-gray-700">
+  <div class="container flex flex-wrap items-center justify-between mx-auto">
+    <a href="index.html" class="flex items-center">
+        <img src="fotor_2023-3-15_19_29_9.png" class="h-8 mr-2 sm:h-10" alt=" Logo" />
+        <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">Muskan Kumari</span>
+    </a>
+    
+    <div class="hidden w-full md:block md:w-auto" id="navbar-multi-level">
+      <ul class="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+        
+<!-----------hire me-----------------button--------------->
+<li> 
+  <div class="flex justify-center">
+    <button class="bg-cyan-600 hover:bg-cyan-800 text-white font-semibold py-2 px-4 rounded-full transition" onclick="showForm()">Hire Me</button>
+  </div>
+  
+  <!-- Hire Me Form Modal  <li>
+        <a href="project.html" class="bg-cyan-600 hover:bg-cyan-500 text-fuchsia-50 rounded-md px-3 py-2 text-sm font-medium" aria-current="page">Hire Me</a>
+        
+      </li>-->
+  <div class="fixed z-10 inset-0 overflow-y-auto hidden" id="hire-me-modal">
+    
+    <div class="flex items-center justify-center min-h-screen">
+      <div class="relative bg-white rounded-md w-full max-w-md mx-auto">
+        <form class="p-6 bg-black">
+          <img src="myimg.jpg" alt="form" class="block mx-auto" width="150" height="100" >
+          <h2 class="text-2xl font-extrabold mb-4 text-center bg-slate-300">Hire Me</h2>
+          <div class="mb-4">
+            <label class="block text-white font-medium mb-2" for="name">Name</label>
+            <input class="w-full border border-gray-400 py-2 px-3 rounded-lg" type="text" id="name" name="name" required>
+          </div>
+          <div class="mb-4">
+            <label class="block text-white font-medium mb-2" for="email">Email</label>
+            <input class="w-full border border-gray-400 py-2 px-3 rounded-lg" type="email" id="email" name="email" required>
+          </div>
+          <div class="mb-4">
+            <label class="block text-white font-medium mb-2" for="message">Message</label>
+            <textarea class="w-full border border-gray-400 py-2 px-3 rounded-lg" id="message" name="message" rows="5" required></textarea>
+          </div>
+          <div class="flex justify-end">
+            <button class="bg-yellow-600 hover:bg-green-600 text-white font-semibold py-2 px-4 rounded-full transition mr-2" type="submit">Send</button>
+            <button class="bg-red-400 hover:bg-red-500 text-gray-800 font-semibold py-2 px-4 rounded-full transition" type="button" onclick="hideForm()">Cancel</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function showForm() {
+      var modal = document.getElementById("hire-me-modal");
+      modal.classList.remove("hidden");
+    }
+  
+    function hideForm() {
+      var modal = document.getElementById("hire-me-modal");
+      modal.classList.add("hidden");
+    }
+  </script>
+  </li>
+  <!-----end form section for hire me-->
+        <li>
+          <a href="index.html" class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Home</a>
+        </li>
+        <li>
+          <a href="service.html" class="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-white dark:bg-blue-600 md:dark:bg-transparent" aria-current="page">Services</a>
+        </li>
+        <li>
+          <a href="project.html" class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Projects</a>
+        </li>
+        <li>
+          <a href="newsletter.html" class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  </header>
+
+    <div class="relative isolate overflow-hidden bg-gray-900 py-24 sm:py-32">
+        <img src="ro.png" alt="bakground image " class="absolute inset-0 -z-10 h-full w-full object-cover object-right md:object-center brightness-50">
+        <svg viewBox="0 0 1097 845" aria-hidden="true" class="hidden transform-gpu blur-3xl sm:absolute sm:-top-10 sm:right-1/2 sm:-z-10 sm:mr-10 sm:block sm:w-[68.5625rem]">
+          <path fill="url(#10724532-9d81-43d2-bb94-866e98dd6e42)" fill-opacity=".2" d="M301.174 646.641 193.541 844.786 0 546.172l301.174 100.469 193.845-356.855c1.241 164.891 42.802 431.935 199.124 180.978 195.402-313.696 143.295-588.18 284.729-419.266 113.148 135.13 124.068 367.989 115.378 467.527L811.753 372.553l20.102 451.119-530.681-177.031Z" />
+          <defs>
+            <linearGradient id="10724532-9d81-43d2-bb94-866e98dd6e42" x1="1097.04" x2="-141.165" y1=".22" y2="363.075" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#776FFF" />
+              <stop offset="1" stop-color="#FF4694" />
+            </linearGradient>
+          </defs>
+        </svg>
+        <svg viewBox="0 0 1097 845" aria-hidden="true" class="absolute left-1/2 -top-52 -z-10 w-[68.5625rem] -translate-x-1/2 transform-gpu blur-3xl sm:top-[-28rem] sm:ml-16 sm:translate-x-0 sm:transform-gpu">
+          <path fill="url(#8ddc7edb-8983-4cd7-bccb-79ad21097d70)" fill-opacity=".2" d="M301.174 646.641 193.541 844.786 0 546.172l301.174 100.469 193.845-356.855c1.241 164.891 42.802 431.935 199.124 180.978 195.402-313.696 143.295-588.18 284.729-419.266 113.148 135.13 124.068 367.989 115.378 467.527L811.753 372.553l20.102 451.119-530.681-177.031Z" />
+          <defs>
+            <linearGradient id="8ddc7edb-8983-4cd7-bccb-79ad21097d70" x1="1097.04" x2="-141.165" y1=".22" y2="363.075" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#776FFF" />
+              <stop offset="1" stop-color="#FF4694" />
+            </linearGradient>
+          </defs>
+        </svg>
+        <div class="mx-auto max-w-7xl px-6 lg:px-8">
+          <div class="mx-auto max-w-2xl lg:mx-0">
+            <h2 class="text-4xl font-bold tracking-tight text-white sm:text-6xl">Work with us</h2>
+            <p class="mt-6 text-lg leading-8 text-gray-300">I will take you tot he journey of new technolgy and will guide you to strive for more</p>
+          </div>
+          <div class="mx-auto mt-10 max-w-2xl lg:mx-0 lg:max-w-none">
+            <div class="grid grid-cols-1 gap-y-6 gap-x-8 text-base font-semibold leading-7 text-white sm:grid-cols-2 md:flex lg:gap-x-10">
+              <a href="#">Open roles <span aria-hidden="true">&rarr;</span></a>
+      
+              <a href="#">Give internship <span aria-hidden="true">&rarr;</span></a>
+      
+              <a href="#">Our values <span aria-hidden="true">&rarr;</span></a>
+      
+              <a href="#">Health & Life <span aria-hidden="true">&rarr;</span></a>
+            </div>
+            <dl class="mt-16 grid grid-cols-1 gap-8 sm:mt-20 sm:grid-cols-2 lg:grid-cols-4">
+              <div class="flex flex-col-reverse">
+                <dt class="text-base leading-7 text-gray-300">Students Testimonals</dt>
+                <dd class="text-2xl font-bold leading-9 tracking-tight text-white">12</dd>
+              </div>
+      
+              <div class="flex flex-col-reverse">
+                <dt class="text-base leading-7 text-gray-300">Learn From us</dt>
+                <dd class="text-2xl font-bold leading-9 tracking-tight text-white">300</dd>
+              </div>
+      
+              <div class="flex flex-col-reverse">
+                <dt class="text-base leading-7 text-gray-300">Visited</dt>
+                <dd class="text-2xl font-bold leading-9 tracking-tight text-white">40</dd>
+              </div>
+      
+              <div class="flex flex-col-reverse">
+                <dt class="text-base leading-7 text-gray-300 justify-center">Paid Intership Offers</dt>
+                <dd class="text-2xl font-bold leading-9 tracking-tight text-white justify-center">5</dd>
+              </div>
+            </dl>
+          </div>
+        </div>
+      </div>
+      
+      <section>
+        <img src="ro.png" alt="bakground image " class="absolute inset-0 -z-10 h-full w-full object-cover object-right md:object-center  brightness-50 blur-md">
+
+
+
+
+
+
+
+        <div class="mx-auto mt-10 grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5">
+          
+          <a href="https://www.linkedin.com/in/muskan-kumari-7b2a69217/" target="_blank">
+          <img class="col-span-2 max-h-12 w-full object-contain lg:col-span-1" src="linkedin.jpg" alt="linkedin icon" width="158" height="48" title="LinedIn Connect">
+      </a>
+          <a href="https://github.com/muskum09ari">
+          <img class="col-span-2 max-h-12 w-full object-contain lg:col-span-1" src="github.png" alt="git hub page" width="158" height="48" title="Github Connect">
+      </a>
+          <a href="mailto:musk09an07kumari@gmail.com
+          .com?subject=Subject&body=Body">
+          <img class="col-span-2 max-h-12 w-full object-contain lg:col-span-1" src="gmail.png" alt="gmail logo icon" width="158" height="48" title="Gmail Connect">
+      </a>
+      <a href="https://join.skype.com/invite/vXgLGdtp4tbL ">
+        <img class="col-span-2 col-start-2 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1 " src="sky.png" alt="skype logo" width="158" height="48" title="Skype Connect">
+          <a href="https://medium.com/@grin9holy-grail">
+          <img class="col-span-2 max-h-12 w-full object-contain sm:col-start-2 lg:col-span-1" src="med.png" alt="medium icon" width="158" height="48" title="Medium Connect">
+      </a>
+          
+          
+      </a>
+      </div>
+    </section>
+
+<!----footer----------------------------------->
+    <footer  >
+    <p>&copy; 2023 M&#xB5;&#353;k&#x105;n k&#xB5;&#x1D52A;&#x105;ri&reg; </p>
+    <p>All rights reserved &clubs;</p>
+</footer>
+
+</body>
+</html>
